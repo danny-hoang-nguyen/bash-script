@@ -1,0 +1,17 @@
+#!/bin/bash
+file="modules.txt"
+# [ -f modules.txt ] && echo "yes"
+while IFS= read -r line
+do
+    # display $line or do something with $line
+	echo "$line"
+
+    if [ -d "$line" ]; then
+    cd "$line" &&
+        git reset --hard && git checkout master && git pull
+    else 
+    git clone https://github.com/danny-hoang-nguyen/bash-script.git
+    fi
+
+done <"$file"
+
