@@ -1,3 +1,3 @@
 # bash-script
 Some scripts I made to clone and build maven project at my local machine
-Commit to test webhook
+I forgot the branch setting, it should include develop branch
