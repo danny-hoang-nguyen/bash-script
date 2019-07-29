@@ -1,0 +1,22 @@
+#!/bin/bash
+#where you list your modules
+file="modules.txt"
+#where you store all your modules
+repoURL="https://github.com/danny-hoang-nguyen/"
+
+while IFS= read -r line
+do
+    # display $line or do something with $line
+	echo Found module name: "$line" from "$file"
+
+    if [ -d "$line" ]; then
+    echo .:::Updating:::. "$line" &&
+    cd "$line" &&
+        git reset --hard && git checkout master && git pull
+    else 
+    echo .:::Cloning:::. "$line"
+    git clone "$repoURL""$line".git
+    fi
+
+done <"$file"
+

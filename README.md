@@ -1,5 +1,7 @@
 # bash-script
 Some scripts I made to clone and build maven project at my local machine
+
+=======
 1. Why this script needs to be done?
 2. How I handle it for the first time?
 3. What is my final solution?
@@ -16,3 +18,4 @@ About the solution:
 
 ## Open point of this script: 
 HOW TO HANDLE CREDENTIAL FOR PRIVATE REPOSITORY?
+
