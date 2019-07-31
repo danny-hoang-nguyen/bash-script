@@ -16,6 +16,5 @@ About the solution:
   - Firstly, I create a txt file which contains the name of project I want to clone or update
   - Secondly, I read the name and check if the current directory has that folder. If it does, the project will be checked out to master branch and updated from remote. It it does not have that project, so that must be the first time and cloning will happen.
 
-## Open point of this script: 
-HOW TO HANDLE CREDENTIAL FOR PRIVATE REPOSITORY?
-
+## Advanced topic
+buid docker image without exposing credential when cloning from priavte repository
